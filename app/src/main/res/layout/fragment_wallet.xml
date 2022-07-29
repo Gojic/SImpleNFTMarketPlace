@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.walletFragment.WalletFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+        <TextView
+            android:id="@+id/balanceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="Your Balance:"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@id/coin_balanceTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/coin_balanceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="5dp"
+
+            app:drawableStartCompat="@drawable/ic_polygon_logo_logotyp_us"
+            app:layout_constraintBottom_toTopOf="@id/priceTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/balanceTV" />
+        <TextView
+            android:id="@+id/priceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@id/public_key_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/coin_balanceTV" />
+
+
+        <TextView
+            android:id="@+id/public_key_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:text="Your Public Key:"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@id/public_key_value_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priceTV" />
+
+        <TextView
+            android:id="@+id/public_key_value_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textIsSelectable="true"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@id/nft_balanceTV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/public_key_TV" />
+
+        <TextView
+            android:id="@+id/nft_balanceTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:text="All Your NFT Will Be Shown Bellow:"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@id/rv_nft_list"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/public_key_value_TV" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_nft_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:overScrollMode="never"
+            android:orientation="horizontal"
+            app:reverseLayout="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nft_balanceTV"
+            tools:listitem="@layout/nft_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
+</layout>

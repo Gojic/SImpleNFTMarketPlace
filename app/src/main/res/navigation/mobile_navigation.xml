@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.polygontestapp.ui.home.HomeFragment"
+        android:label="Marketplace"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_sellBuyNFT"
+            app:destination="@id/sellBuyNFT" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.polygontestapp.ui.walletFragment.WalletFragment"
+        android:label="@string/wallet"
+        tools:layout="@layout/fragment_wallet" >
+        <action
+            android:id="@+id/action_nav_gallery_to_listNFT"
+            app:destination="@id/sellBuyNFT" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.polygontestapp.ui.mintNFT.MintNFTFragment"
+        android:label="@string/mint"
+        tools:layout="@layout/fragment_miniting_nft" >
+        <action
+            android:id="@+id/action_nav_slideshow_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/sellBuyNFT"
+        android:name="com.example.polygontestapp.ui.walletFragment.sellBuyNFT.SellBuyNFT"
+        android:label="List Your NFT"
+        tools:layout="@layout/fragment_list_n_f_t" >
+        <action
+            android:id="@+id/action_listNFT_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_sellBuyNFT_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionFragment"
+        android:name="com.example.polygontestapp.ui.transaction.TransactionFragment"
+        android:label="fragment_transaction"
+        tools:layout="@layout/fragment_transaction" />
+</navigation>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+<!--        <variable-->
+<!--            name="model"-->
+<!--            type="com.nswd.successplan.model.CreditCardLiabilities" />-->
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/nft_image_IMG"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:padding="25dp"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/name_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/name_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/price_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nft_image_IMG" />
+        <TextView
+            android:id="@+id/price_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/contract_address_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_TV" />
+
+        <TextView
+            android:id="@+id/contract_address_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/token_id_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/price_TV" />
+
+        <TextView
+            android:id="@+id/token_id_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/id_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contract_address_TV" />
+
+
+        <TextView
+            android:id="@+id/id_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/token_standard_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/token_id_TV" />
+
+        <TextView
+            android:id="@+id/token_standard_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/block_chain_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_TV" />
+
+
+        <TextView
+            android:id="@+id/block_chain_TV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="textStart"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/sell_BTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/token_standard_TV" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sell_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="29dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="29dp"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/blue_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/cancel_BTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/block_chain_TV" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="29dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="29dp"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/cancel_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sell_BTN" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

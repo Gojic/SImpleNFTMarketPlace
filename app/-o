@@ -1,0 +1,33 @@
+              _      _____ _ 
+             | |    |____ (_)
+__      _____| |__      / /_ 
+\ \ /\ / / _ \ '_ \     \ \ |
+ \ V  V /  __/ |_) |.___/ / |
+  \_/\_/ \___|_.__/ \____/| |
+                         _/ |
+                        |__/ 
+by Web3Labs
+
+web3j [OPTIONS] [COMMAND]
+
+Description:
+
+Run Web3j CLI commands
+
+Options:
+  -h, --help        Show this help message and exit.
+      --telemetry   Whether to perform analytics.
+  -v, --version     Print version information and exit.
+Commands:
+  run       Run your project using a live Ethereum network
+  audit     Audit Solidity contract
+  generate  Generate Wrappers or Tests
+  help      Displays help information about the specified command
+  import    Import existing Solidity contracts into a new Web3j Project
+  new       Create a new Web3j Project
+  openapi   Generate a Web3j-OpenAPI project
+  test      Run the tests of a gradle project
+  docker    Run generated projects in Docker
+  wallet    Manage wallets for Ethereum
+
+Web3j CLI is licensed under the Apache License 2.0

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.mintNFT.MintNFTFragment">
+
+        <TextView
+            android:id="@+id/list_of_test_uris_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="8dp"
+            android:text="This is list of metafiles for testing purposes"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/metafile1_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.01999998"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/metafile1_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="https://ipfs.io/ipfs/bafkreiheyjisbbzgavag2ghfph3ru2egvwr36eqgde3vmrjjlekicinyy4?filename=retriver.json"
+            android:textIsSelectable="true"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/metafile2_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_of_test_uris_TV"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/metafile2_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="https://ipfs.io/ipfs/bafkreibse5olb6ho2pdzijcxz2qkvqndswq4nwd7wzisc24hpoue5pgr5y?filename=haski.json"
+            android:textIsSelectable="true"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/metafile3_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/metafile1_TV"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/metafile3_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="https://ipfs.io/ipfs/bafkreihjvcl4ebi6gyhfxwwh37mihdeyt2w3oejwg5pxq3wxzx2fjmmdaa?filename=rot.json"
+            android:textIsSelectable="true"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/metafile4_TV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/metafile2_TV"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/metafile4_TV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="https://ipfs.io/ipfs/bafkreid2naqfxrh3las2a6vheidvzau2vwytxrf3nxpqnmiysyb2fhbqbu?filename=pug.json"
+            android:textIsSelectable="true"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/metafile_ET"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/metafile3_TV"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <EditText
+            android:id="@+id/metafile_ET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="14dp"
+            android:hint="@string/enter_meta_file_url"
+            app:layout_constraintBottom_toTopOf="@+id/mint_BTN"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/metafile4_TV"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/nft_image_IMG"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="250dp"-->
+        <!--            android:layout_marginStart="44dp"-->
+        <!--            android:layout_marginEnd="44dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:padding="25dp"-->
+        <!--            android:textAlignment="textStart"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/price_TV"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/metafile_ET" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/price_TV"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="14dp"-->
+        <!--            android:layout_marginEnd="14dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:textAlignment="textStart"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/contract_address_TV"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/nft_image_IMG" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/contract_address_TV"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="14dp"-->
+        <!--            android:layout_marginEnd="14dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:textAlignment="textStart"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/token_id_TV"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/price_TV" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/token_id_TV"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="14dp"-->
+        <!--            android:layout_marginEnd="14dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:textAlignment="textStart"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/token_standard_TV"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/contract_address_TV" />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/token_standard_TV"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="14dp"-->
+        <!--            android:layout_marginEnd="14dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:textAlignment="textStart"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/block_chain_TV"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/token_id_TV" />-->
+
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/block_chain_TV"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="14dp"-->
+        <!--            android:layout_marginEnd="14dp"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:textAlignment="textStart"-->
+        <!--            android:textSize="14sp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/mint_BTN"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@+id/token_standard_TV" />-->
+
+        <Button
+            android:id="@+id/mint_BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="29dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="29dp"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/blue_btn"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="Mint NFT"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/metafile_ET" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

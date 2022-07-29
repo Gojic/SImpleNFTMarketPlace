@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.walletFragment.sellBuyNFT.SellBuyNFT">
+
+            <ImageView
+                android:id="@+id/nft_image_IMG"
+                android:layout_width="0dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:padding="25dp"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/name_TV"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.060000002"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/name_TV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/price_ET"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nft_image_IMG" />
+
+            <EditText
+                android:id="@+id/price_ET"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter price in Matic"
+                android:inputType="number"
+                android:textColorHint="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/sell_BTN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_TV" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sell_BTN"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingStart="29dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="29dp"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/blue_btn"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price_ET" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
